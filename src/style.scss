@@ -1,10 +1,10 @@
-@import './google-fonts.css';
+@import "./Ubuntu.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -35,10 +35,10 @@ body {
   color: rgba(0, 0, 0, 0);
   font-size: 8em;
   font-weight: 700;
-  border: 10px solid rgba(0, 0, 0, .1);
+  border: 10px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.520s;
+  transition: 0.52s;
   transform-origin: 50% 100%;
   /* filter: hue-rotate(calc(var(--i) * 50deg)):
 filter: hue-rotate() 属性用于改变元素的颜色色调。
@@ -46,17 +46,16 @@ calc(var(--i) * 50deg) 表示将色调旋转 --i 的 50 倍角度。
 由于 --i 的值从 1 到 9，所以卡片的颜色会随着 --i 的变化而旋转 50 度到 450 度，从而实现 1~9 的颜色变化。 */
   filter: hue-rotate(calc(var(--i) * 30deg));
 
-  box-shadow: 0 15px 50px rgba(0, 0, 0, .1);
-  user-select: none;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
 }
 
 .container:hover .card {
-  transform: rotate(calc(var(--i) *8deg)) translate(calc(var(--i) * 140px), -100px);
-  color: rgba(0, 0, 0, .25);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, .25);
+  transform: rotate(calc(var(--i) * 8deg))
+    translate(calc(var(--i) * 140px), -100px);
+  color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
 }
-
-
 
 .container:active .card {
   background-color: #333;
