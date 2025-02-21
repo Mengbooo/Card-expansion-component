@@ -28,13 +28,6 @@
 </template>
 
 <style scoped lang="scss">
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../font/Ubuntu-Bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-};
-
 .container {
   width: 100%;
   position: relative;
