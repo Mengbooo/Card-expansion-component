@@ -27,28 +27,13 @@
 
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @font-face {
   font-family: 'Ubuntu';
   src: url('../font/Ubuntu-Bold.ttf');
   font-weight: normal;
   font-style: normal;
 };
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #0f0f0f;
-}
 
 .container {
   width: 100%;
