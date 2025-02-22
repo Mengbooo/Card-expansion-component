@@ -2,9 +2,20 @@
 </script>
 
 <template>
-  <div style="position: absolute;top: 30px;transform: translateX(-50%);user-select: none;">
-    <a href="https://github.com/Mengbooo"><img src="./assets/logoooo.jpg" alt=""
-        style="width: 50px; border-radius: 10px;"></a>
+  <div class="symbol" style="display: flex;align-items: center;justify-content:center;position: absolute;top: 10%;transform:translate(-50%,-50%);max-width: 100dvw;background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            padding: 20px;border: black 3px solid;border-radius: 15px;">
+    <div class="logo">
+      <a href="https://github.com/Mengbooo"><img src="./assets/logoooo.jpg" alt=""
+          style="width: 50px;border: black 1px solid ; border-radius: 10px;margin-right: 20px;"></a>
+    </div>
+    <div class="footer">
+      <p>Thanks for the inspiration from <a href="https://www.youtube.com/@OnlineTutorialsYT"
+          style="color: aqua;text-decoration: none;"><strong>OnlineTutorialsYT</strong></a></p>
+      <p>Remastered by <a style="color: aqua;text-decoration: none;"
+          href="https://github.com/Mengbooo"><strong>Bolaxious</strong></a></p>
+    </div>
   </div>
 
   <div class="container">
@@ -18,18 +29,13 @@
     <div class="card" style="--i: 3;">out</div>
     <div class="card" style="--i: 4;">!</div>
   </div>
-  <div style="user-select: none;position: absolute;bottom: 20px;transform: translateX(-50%);color: white;z-index: 999;">
-    <p>Thanks for the inspiration from <a href="https://www.youtube.com/@OnlineTutorialsYT"
-        style="color: aqua;text-decoration: none;"><strong>OnlineTutorialsYT</strong></a></p>
-    <p>Remastered by <a style="color: aqua;text-decoration: none;"
-        href="https://github.com/Mengbooo"><strong>Bolaxious</strong></a></p>
-  </div>
+
 
 </template>
 
 <style scoped lang="scss">
 .container {
-  width: 100%;
+  border: #5e5cfc 3px solid;
   position: relative;
   display: flex;
   justify-content: center;
@@ -60,8 +66,7 @@
 }
 
 .container:hover .card {
-  transform: rotate(calc(var(--i) * 8deg))
-    translate(calc(var(--i) * 140px), -100px);
+  transform: rotate(calc(var(--i) * 8deg)) translate(calc(var(--i) * 140px), -100px);
   color: rgba(0, 0, 0, 0.25);
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
 }
@@ -75,5 +80,4 @@
   z-index: 1;
   background-color: #5e5cfc;
 }
-
 </style>
